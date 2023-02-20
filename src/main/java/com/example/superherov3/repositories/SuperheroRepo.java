@@ -84,16 +84,4 @@ public class SuperheroRepo {
         return null;
     }
 
-    public String toString() {
-        if (heroList.size() > 0) {
-            StringBuilder databaseString = new StringBuilder();
-            for (Superhero superhelt : heroList) {
-                databaseString.append(superhelt.toString());
-            }
-            return ("\nList of Superheroes: \n-----------------\n" + databaseString);
-        } else {
-            return "The database is empty.";
-        }
-    }
-
 }
